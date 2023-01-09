@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-3">
+      <!--user-->
+      <h3>Fake User List</h3>
+      <div class="row" id="user-list">
+        <!--render user list-->
+      </div>
+
+      <!--modal-->
+      <div class="modal" tabindex="-1" id="user-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="user-modal-title">Modal title</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body" id="userInfo">
+              <img
+                src="https://robohash.org/repellatvoluptateomnis.png?size=300x300&set=set1"
+                id="user-modal-img"
+              />
+              <p id="user-modal-email"></p>
+              <p id="user-modal-gender"></p>
+              <p id="user-modal-age"></p>
+              <p id="user-modal-region"></p>
+              <p id="user-modal-birthday"></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Add friend</button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
